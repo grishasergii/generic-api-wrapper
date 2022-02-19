@@ -4,8 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+requests = "*"
+urllib3 = "*"
 
 [dev-packages]
+pytest = "*"
+docker = "*"
+flask = "*"
+black = "*"
+isort = "*"
+pylint = "*"
+pylint-pytest = "*"
 
 [requires]
 python_version = "3.9"
