@@ -2,7 +2,7 @@
 
 __author__ = """Sergii Gryshkevych"""
 __email__ = ""
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 from wrapy.aws_iam_auth import AwsIamAuth
