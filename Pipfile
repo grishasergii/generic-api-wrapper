@@ -17,6 +17,5 @@ black = "*"
 isort = "*"
 pylint = "*"
 pylint-pytest = "*"
-
-[requires]
-python_version = "3.9"
+bump2version = "*"
+twine = "*"

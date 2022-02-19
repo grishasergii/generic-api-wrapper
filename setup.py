@@ -23,7 +23,7 @@ test_requirements = [
 
 setup(
     author="Sergii Gryshkevych",
-    author_email="s.gryshkevych@gmail.com",
+    author_email="",
     python_requires=">=3.6",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
@@ -34,6 +34,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
     ],
     description="Generic API wrapper",
     install_requires=requirements,
