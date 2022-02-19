@@ -92,7 +92,7 @@ class Api:
 
     def _make_request(self, method, **kwargs):
         session_method = getattr(self.session, method)
-        response = session_method(self.base_url + "/", auth=self.auth, **kwargs)
+        response = session_method(self.base_url, auth=self.auth, **kwargs)
 
         response.raise_for_status()
         if response.text:

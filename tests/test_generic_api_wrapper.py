@@ -3,7 +3,7 @@ import os
 import pytest
 from requests.exceptions import HTTPError
 
-from wrapy.wrapy import Api
+from generic_api_wrapper.generic_api_wrapper import Api
 
 
 @pytest.mark.parametrize("url", ["https://api.github.com", "https://api.github.com/"])

@@ -2,18 +2,18 @@
 
 version=0.1.1
 
-`wrapy` is a generic REST API python wrapper. It comes with an AWS IAM authenticator out of the box. 
+`generic-api-wrapper` is a generic REST API python wrapper. It comes with an AWS IAM authenticator out of the box. 
 
 # Getting started
 
 ## Install
-`pip install wrapy`
+`pip install generic-api-wrapper`
 
 ## Usage
 
 ### Basic usage
 ```python
-from wrapy import Api
+from generic_api_wrapper import Api
 
 
 # To create an API wrapper object provide base url
@@ -38,7 +38,7 @@ imaginary_api.resources.post(data={"name": "resource-name"})
 ### Authentication
 - AWS IAM authnetication
 ```python
-from wrapy import Api, AwsIamAuth
+from generic_api_wrapper import Api, AwsIamAuth
 
 
 api_url = "https://api.aws-powered-api.com"

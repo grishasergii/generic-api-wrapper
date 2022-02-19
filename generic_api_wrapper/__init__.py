@@ -5,5 +5,5 @@ __email__ = ""
 __version__ = "0.1.1"
 
 
-from wrapy.aws_iam_auth import AwsIamAuth
-from wrapy.wrapy import Api
+from generic_api_wrapper.aws_iam_auth import AwsIamAuth
+from generic_api_wrapper.generic_api_wrapper import Api

@@ -14,7 +14,7 @@ def testing_env(monkeypatch):
 @pytest.fixture(scope="module")
 def api_server():
     """Starts a mock api server in a docker container."""
-    image_name = "wrapy-test-api-server-fixture"
+    image_name = "generic-api-wrapper-test-api-server-fixture"
     client = docker.from_env()
     client.images.build(path="tests/api_server", tag=image_name)
     container = client.containers.run(
