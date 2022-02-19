@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 requests = "*"
 urllib3 = "*"
+boto3 = "*"
+aws-requests-auth = "*"
 
 [dev-packages]
 pytest = "*"

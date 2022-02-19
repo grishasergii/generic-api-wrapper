@@ -49,10 +49,17 @@ class RetrySession:  # pylint: disable=too-few-public-methods
 class Api:
     """Api wrapper object."""
 
-    def __init__(self, base_url):
+    def __init__(self, base_url, auth=None):
+        """Creates an API wrapper object.
+
+        Args:
+            base_url: string
+            auth: Auth tuple or callable to enable authentication, passed to the session
+        """
         self.base_url = base_url.rstrip("/")
         self._session = RetrySession()
         self.parent = None
+        self._auth = auth
 
     @classmethod
     def _from_parent(cls, url, parent):
@@ -77,9 +84,15 @@ class Api:
             return self.parent.session
         return self._session
 
+    @property
+    def auth(self):
+        if self.parent:
+            return self.parent.auth
+        return self._auth
+
     def _make_request(self, method, **kwargs):
         session_method = getattr(self.session, method)
-        response = session_method(self.base_url, **kwargs)
+        response = session_method(self.base_url + "/", auth=self.auth, **kwargs)
 
         response.raise_for_status()
         if response.text:
