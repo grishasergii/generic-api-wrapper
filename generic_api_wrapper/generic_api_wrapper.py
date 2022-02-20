@@ -107,6 +107,10 @@ class Api:
         """POST request."""
         return self._make_request("post", **kwargs)
 
+    def put(self, **kwargs):
+        """PUT request."""
+        return self._make_request("post", **kwargs)
+
     def delete(self, **kwargs):
         """DELETE request."""
         return self._make_request("delete", **kwargs)
