@@ -1,6 +1,6 @@
 # Generic API wrapper
 
-version=0.1.2
+version=0.2.0
 
 `generic-api-wrapper` is a generic REST API python wrapper. It comes with an AWS IAM authenticator out of the box. 
 

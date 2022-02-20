@@ -2,7 +2,7 @@
 
 __author__ = """Sergii Gryshkevych"""
 __email__ = ""
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 
 
 from generic_api_wrapper.aws_iam_auth import AwsIamAuth
